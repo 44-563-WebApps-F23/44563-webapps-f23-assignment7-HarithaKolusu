@@ -34,6 +34,7 @@
     <div id="help" style="color:rgb(209, 26, 212); background-color: rgb(158, 230, 160); font-family: 'Times New Roman';">
         Help report
     </div><br>
+    <!-- <button id="newGameButton" onclick="newGame()">New Game</button> -->
 
 <h4 style="text-align: center;">Trading Treasures</h4>
     <div class="container">
@@ -144,6 +145,7 @@
     
             let img_id = ids[position];
             let imageElement = document.getElementById(img_id);
+
     
             if (position === treasureLocation) {
                 imageElement.src = "treasure.jpg";
@@ -170,6 +172,7 @@
             lastCheck = position;
         }
     
+        
         function help() {
             let helpText="";
             let row_Treasure = Math.floor(treasureLocation / 5);
@@ -197,6 +200,28 @@
         }
         document.getElementById("help").textContent = helpText;
     
+        function newGame() {
+    checkCount = 0;
+    penalty = 0;
+    lastCheck = 0;
+    gameOver = false;
+
+    treasureLocation = Math.floor(Math.random() * 25);
+
+    do {
+        trapLocation = Math.floor(Math.random() * 25);
+
+    } while (trapLocation === treasureLocation);
+
+    document.getElementById("locations").innerHTML = "Number of locations checked is : " + checkCount;
+    document.getElementById("penalty").innerHTML = "Penalty is : " + penalty;
+    document.getElementById("help").textContent = "Help report";
+
+    for (var i = 0; i < 25; i++) 
+    {
+        document.getElementById(ids[i]).src = "bear.jpg"
+    }
+}
     </script>
 </body>
 </html>
