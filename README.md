@@ -3,6 +3,9 @@
 An assignment on java script modifying the DOM and using anonymous callback functions.
 
 Hosted at https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-HarithaKolusu/pirate.html
+<br>
 Hosted at https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-HarithaKolusu/react.html
+<br>
 Hosted at https://44-563-webapps-f23.github.io/44563-webapps-f23-assignment7-HarithaKolusu/merger.html
+<br>
 
